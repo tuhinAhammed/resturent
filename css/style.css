@@ -1,0 +1,621 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    font-size: 14px;
+    line-height: 24px;
+    font-family: 'DM Sans', sans-serif;
+}
+h1, h2 ,h3 , h4 ,h5 ,h6{
+    font-family: 'Grandstander', cursive;
+}
+a,a:hover{
+    color: #000;
+    cursor: pointer;
+    text-decoration: none;
+}
+ul , ul:hover{
+    list-style: none;
+}
+
+/* header css start here */
+.header{
+    width: 100%;
+    position: fixed;
+    z-index: 9999;
+}
+.header .bg-light{
+    background-color:#E94950 !important;
+    
+}
+.header .bg-light li{
+    position: relative;
+    margin-left: 15px;
+}
+.header .bg-light li .nav-link{
+    font-size: 20px;
+    line-height: 30px;
+    color: #fff !important;
+}
+.header .bg-light li .nav-link:hover ,.header .bg-light li .nav-link:focus{
+    color: #eee !important;
+}
+.header .bg-light li .nav-link::before {
+    content: "";
+    position: absolute;
+    width: 0px;
+    height: 3px;
+    background-color: #fff !important;
+    left: 11%;
+    top: 85%;
+    opacity: 0;
+    transition: 0.7s;
+}
+.header .bg-light li:hover .nav-link::before {
+    content: "";
+    position: absolute;
+    width: 67px;
+    height: 3px;
+    background-color: #fff !important;
+    left: 11%;
+    top: 85%;
+    opacity: 1;
+}
+.navbar-light .navbar-nav .nav-link.active{
+    color: #eee !important;
+}
+/* header css end here */
+
+/* banner css start here */
+.banner{
+    width: 100%;
+    background: url(../images/banner.png) center top no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+.banner .title{
+    padding: 300px 0px 0px 0px;
+    text-align: center;
+}
+.banner .title h1 {
+    font-size: 122px;
+    line-height: 80px;
+    color: #fff;
+    font-weight: 600;
+}
+.banner .title p {
+    font-size: 24px;
+    line-height: 34px;
+    color: #fff;
+    padding: 33px 283px;
+}
+.banner .title .btn-light {
+    font-size: 26px;
+    line-height: 33px;
+    padding: 10px 34px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    border: 2px solid #fff;
+    border-radius: 50px;
+    transition: 0.5s;
+}
+.banner .title .btn-light:hover , .banner .title .btn-light:focus{
+    background: transparent;
+    color: #fff;
+    transform: scale(1.1);
+}
+/* banner css end here */
+
+/* product css start here */
+    .product {
+        width: 100%;
+        background: url(../images/product.png) center top no-repeat;
+        background-size: cover;
+        height: 214vh;
+        padding: 135px 0px 30px 0px;
+    }
+    .product .title{
+        width: 100%;
+        text-align: center;
+    }
+    .product .title h1{
+        color: #E94950;
+    }
+    .product .inner-product{
+        text-align: center;
+        margin: 60px 0px 30px 0px;
+    }
+    .product .inner-product img{
+        width: 60%;
+        transition: 0.5s;
+    }
+    .product .inner-product:hover img ,.inner-product:hover .btn-danger{
+        transform: scale(1.1);
+    }
+    .product .inner-product h1{
+        margin-top: 10px;
+    }
+    .product .inner-product p {
+        font-size: 28px;
+        line-height: 49px;
+        width: 23%;
+        font-weight: 600;
+        margin: 20px 0px;
+        text-align: center;
+        border: 2px dashed #dc3545;
+        color: #DC3545;
+        margin-left: 38%;
+    }
+    .product .inner-product .btn-danger {
+        font-size: 18px;
+        line-height: 28px;
+        padding: 8px 37px;
+        font-weight: 600;
+        border-radius: 50px;
+        margin-top: -10px;
+        border: 2px solid #E94950;
+        letter-spacing: 1px;
+        transition: 0.5s;
+    }
+    .product .inner-product .btn-danger:hover {
+        background: transparent;
+        color: #E94950;
+    }
+/* product css end here */
+
+/* promo css start here */
+    .promo {
+        width: 100%;
+        background: url(../images/counting.png) center top no-repeat;
+        height: 100vh;
+        padding: 124px 0px 60px 0px;
+        background-size: cover;
+    }
+    .promo .title{
+        text-align: center;
+        color: #fff;
+    }
+    .promo .inner-promo {
+        width: 100%;
+        color: #fff;
+        margin-left: 40px;
+    }
+    .promo .promo-content {
+        border: 5px dashed #fff;
+        color: #fff;
+        border-radius: 100%;
+        text-align: center;
+        padding: 90px 27px;
+        width: 70%;
+        margin-top: 85px;
+    }
+    .promo .inner-promo h1{
+
+    }
+    .promo .inner-promo h2{
+
+    }
+/* promo css end here */
+
+/* item css start here */
+    .item {
+        width: 100%;
+        padding: 125px 0px;
+        background: url(../images/product.png) center top no-repeat;
+        background-size: cover;
+        color: #E94950;
+        height: 190vh;
+    }
+    .item .title{
+        width: 100%;
+        text-align: center;
+    }
+    .item .title p{
+        color: #000;
+    }
+    .item .inner-item{
+        padding: 40px 0px;
+    }
+    .item .item-image{
+        padding: 50px 0px 0px 0px;
+    }
+    .item .item-image img{
+        width: 70%;
+        transition: 0.5s;
+    }
+    .item .inner-item:hover .item-image img {
+        transform: scale(1.5);
+    }
+    .item .item-content{
+        width: 100%;
+    }
+    .item .item-content h1{
+        letter-spacing: 1px;
+    }
+    .item .item-content p{
+        font-size: 16px;
+        line-height: 26px;
+        color: #000;
+    }
+    .item .item-book {
+        padding: 60px 0px;
+        background-color: #FAF5E4;
+        text-align: center;
+        box-shadow: 0px 10px 28px rgb(0 0 0 / 28%);
+        border-radius: 20px;
+        margin-top: 40px;
+        width: 88%;
+        margin: auto;
+        height: 455px;
+    }
+    .item .item-book .img{
+        width: 30%;
+        text-align: center;
+    }
+    .item .item-book .item-img{
+        margin: auto;
+    }
+    .item .item-book .chiken{
+        margin-top: 25px;
+    }
+    .item .item-book .pasta{
+        
+    }
+    .item .item-book .Pangsit {
+        padding: 9px 0px;
+    }
+    .item .item-book h1{
+        padding: 25px 0px 0px 0px;
+    }
+    .item .item-book p {
+        font-size: 17px;
+        line-height: 27px;
+        padding: 0px 0px;
+        color: #514d4d;
+    }
+    .item .slick-prev:before, .slick-next:before{
+        color: #E94950 !important;
+        background-color: transparent!important;
+        font-size: 40px;
+    }
+    .item .item-book .btn-danger {
+        font-size: 25px;
+        line-height: 35px;
+        font-weight: 600;
+        border-radius: 50px;
+        padding: 5px 44px;
+        background-color: #E94950 !important;
+        border: 2px solid #E94950;
+        transition: 0.2s;
+    }
+    .item .item-book .btn-danger:hover{
+        background-color: transparent !important;
+        color: #E94950;
+    }
+    
+    .slick-slide img {
+        display:inline; 
+    }
+/* item css end here */
+
+/* contact css start here */
+    .contact {
+        width: 100%;
+        padding: 130px 0px 60px 0px;
+        background-color: #FAF5E4;
+    }
+    .contact .title{
+        text-align: center;
+    }
+    .contact .title h1{
+        color: #E94950;
+    }
+    .contact .subscribe{
+        width: 50%;
+        position: relative;
+        margin: auto;
+        padding: 148px 0px;
+    }
+    .contact .subscribe .form-control {
+        width: 100%;
+        padding: 10px 17px;
+        font-size: 20px;
+        line-height: 30px;
+        border-radius: 50px;
+    }
+    .contact .subscribe .form-control:focus{
+        border: none;
+        box-shadow: 0 0 0 2.25px rgb(13 110 253 / 21%);
+    }
+    .contact .subscribe .btn-danger {
+        color: #fff;
+        background-color: #E94950;
+        font-size: 20px;
+        border-color: #E94950;
+        line-height: 30px;
+        padding: 9px 20px;
+        border-radius: 50px;
+        top: 148px;
+        left: 477px;
+        position: absolute;
+        border: 2px solid #E94950;
+        transition: 0.5s;
+    }
+    .contact .subscribe .btn-danger:hover{
+        transform: scale(1.1);
+    }
+    .contact .main-contact{
+        padding: 60px 0px;
+    }
+    .contact .contact-about{
+        width: 100%;
+    }
+    .contact .contact-about h2{
+        font-size: 30px;
+
+    }
+    .contact .contact-about p{
+
+    }
+    .contact .contact-social{
+        width: 100%;
+        margin-left: 80px;
+    }
+    .contact .contact-social h4{
+        font-weight: 600;
+    }
+    .contact .contact-social ul {
+        font-size: 17px;
+        padding: 0;
+        line-height: 46px;
+        font-weight: 400;
+    }
+    .contact .contact-social li{
+        transition: 0.2s;
+    }
+    .contact .contact-social li:hover{
+        transform: scale(1.1);
+    }
+    .contact .contact-social i {
+        width: 47px;
+        height: 47px;
+        text-align: center;
+        font-size: 28px;
+        border: 2px solid #000;
+        padding: 8px 10px;
+        border-radius: 50%;
+        margin-top: 3px;
+        color: #000;
+        transition: 0.5s;
+    }
+    .contact .contact-social i:hover , .contact .contact-social i:focus{
+        background: #000;
+        color: #fff;
+    }
+    .contact .footer{
+        width: 100%;
+        text-align: center;
+    }
+    .contact .footer p{
+        font-size: 17px;
+        line-height: 27px;
+    }
+    .contact .footer a{
+        font-weight: 600;
+    }
+/* contact css end here */
+/* global css start here */
+    .title{
+        width: 100%;
+    }
+    .title h1{
+        font-size: 58px;
+        line-height: 68px;
+    }
+    .title p {
+        font-size: 20px;
+        line-height: 30px;
+        padding: 0px 24%;
+    }
+/* global css end here */
+
+/* **************************************************
+    responsive css for mobile (320px - 480px) start
+*****************************************************/
+
+@media(min-width:320px) and (max-width:480px){
+
+
+
+/* header responsive start */
+    .header .navbar-brand img{
+        width: 50%;
+    }
+/* header responsive end */
+
+/* banner responsive start  */
+    .banner {
+        width: 100%;
+        height: 116vh;
+    }
+    .banner .title {
+        padding: 137px 0px 0px 0px;
+    }
+    .banner .title h1 {
+        font-size: 52px;
+        line-height: 113px;
+    }
+    .banner .title p{
+        padding: 0;
+    }
+    .banner .title p {
+        font-size: 24px;
+        line-height: 40px;
+        margin-bottom: 30px;
+    }
+    .banner .title .btn-light {
+        font-size: 21px;
+        line-height: 21px;
+        padding: 10px 23px;
+    }
+/* banner responsive end */
+
+/* product responsive start */
+    .product {
+        width: 100%;
+        height: 604vh;
+        padding: 60px 0px;
+    }
+    .product .inner-product {
+        text-align: center;
+        margin: 20px 0px 30px 0px;
+    }
+    .product .inner-product img {
+        width: 54%;
+        padding: 22px 0px;
+        transition: 0.5s;
+    }
+    .product .inner-product p {
+        font-size: 29px;
+        line-height: 39px;
+        text-align: center;
+        margin-bottom: 35px;
+    }
+    .product .inner-product .btn-danger {
+        font-size: 20px;
+        line-height: 30px;
+        padding: 7px 33px;
+    }
+/* product responsive end */
+/* promo responsive start */
+    .promo {
+        width: 100%;
+        height: 195vh;
+        padding: 60px 0px;
+    }
+    .promo .inner-promo {
+        width: 100%;
+        color: #fff;
+        margin: 0;
+    }
+    .promo .promo-content {
+        text-align: center;
+        padding: 44px 10px;
+        width: 60%;
+        margin-top: 25px;
+        margin-left: 20%;
+    }
+/* promo responsive end */
+
+/* item responsive start */
+    .item .inner-item {
+        padding: 0px 0px;
+        text-align: center;
+    }
+    .item .item-image {
+        padding: 0px 0px 0px 0px;
+    }
+    .item .item-image img {
+        width: 30%;
+        margin: 30px 0px;
+        transition: 0.2s;
+
+    }
+    .item .inner-item:hover .item-image img{
+        transform: scale(1.2);
+    }
+    .item {
+        width: 100%;
+        padding: 60px 0px;
+        height: 322vh;
+    }
+    .item .item-book {
+        padding: -3px 0px;
+        border-radius: 20px;
+        margin-top: 40px;
+        width: 97%;
+        margin: auto;
+        height: 384px;
+        padding: 0;
+    }
+    .item .slick-slider .slick-list{
+        padding: 0px 10px;
+    }
+/* item responsive end */
+
+/* contact responsive start  */
+    .contact {
+        width: 100%;
+        padding:40px 0px 20px 0px;
+        margin-top: 316px;
+        background-color: #FAF5E4;
+    }
+    .contact .subscribe {
+        width: 85%;
+        padding: 43px 0px;
+    }
+    .contact .subscribe .form-control {
+        width: 100%;
+        padding: 8px 15px;
+        font-size: 18px;
+        line-height: 28px;
+    }
+    .contact .subscribe .btn-danger {
+        color: #fff;
+        font-size: 18px;
+        line-height: 28px;
+        padding: 6px 12px;
+        top: 99px;
+        left: 63px;
+        position: absolute;
+    }
+    .contact .main-contact {
+        margin-top: 80px;
+        padding: 0;
+    }
+    .contact .contact-social {
+        width: 100%;
+        text-align: center;
+        margin: 0;
+        margin-top: 40px;
+    }
+    .contact .contact-social ul {
+        font-size: 17px;
+        line-height: 28px;
+
+    }
+    .contact .contact-social .social-item ul{
+       margin-top: 40px;
+    }
+    .contact .contact-social .social-item li {
+        transition: 0.2s;
+        display: inline;
+    }
+    .contact .footer p {
+        font-size: 17px;
+        margin-bottom: -10px;
+        line-height: 27px;
+    }
+/* contact responsive end */
+
+/* global css start here */
+.title{
+    width: 100%;
+}
+.title h1 {
+    font-size: 43px;
+    line-height: 53px;
+}
+.title p {
+    font-size: 20px;
+    line-height: 30px;
+    padding: 0;
+}
+/* global css end here */
+
+
+}
+/* **************************************************
+    responsive css for mobile (320px - 480px) end
+*****************************************************/
